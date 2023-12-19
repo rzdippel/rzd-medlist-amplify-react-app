@@ -6,8 +6,8 @@ import React, { useEffect, useState } from 'react';
 import { Auth } from 'aws-amplify'; // Import Auth from aws-amplify
 
 AWS.config.update({
-  accessKeyId: 'AKIAS2E3BVXB2SNSMAID',
-  secretAccessKey: '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',
+  accessKeyId: 
+  secretAccessKey:
   region: 'us-east-1',
 });
 
