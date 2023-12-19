@@ -1,0 +1,12 @@
+{
+  "AppSyncApiName": "rzdamplifymedlistapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-09-18T01:09:07.470Z",
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authrzdamplifymedlistappbcca65df",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

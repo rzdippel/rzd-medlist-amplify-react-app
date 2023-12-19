@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-rzdamplifymedlistapp-dev-193605-authRole",
+      "UnauthRoleArn": "arn:aws:iam::193598696899:role/amplify-rzdamplifymedlistapp-dev-193605-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::193598696899:role/amplify-rzdamplifymedlistapp-dev-193605-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-rzdamplifymedlistapp-dev-193605-deployment",
+      "UnauthRoleName": "amplify-rzdamplifymedlistapp-dev-193605-unauthRole",
+      "StackName": "amplify-rzdamplifymedlistapp-dev-193605",
+      "StackId": "arn:aws:cloudformation:us-east-1:193598696899:stack/amplify-rzdamplifymedlistapp-dev-193605/81ae80f0-3bc4-11ee-ad20-0ed0c8d340a3",
+      "AmplifyAppId": "d21tpw86m9cshz"
+    },
+    "categories": {
+      "auth": {
+        "rzdamplifymedlistappbcca65df": {}
+      },
+      "api": {
+        "rzdamplifymedlistapp": {}
+      }
+    }
+  }
+}

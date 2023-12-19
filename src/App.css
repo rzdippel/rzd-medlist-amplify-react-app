@@ -1,38 +1,247 @@
 .App {
   text-align: center;
+  font-size: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  margin: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: whitesmoke;
+  font-size: 60px;
+  font-family: 'Quicksand', sans-serif;
+  text-shadow:     
+    -1px -1px 0 black, /* Top-left border shadow */
+    1px -1px 0 black,  /* Top-right border shadow */
+    -1px 1px 0 black,  /* Bottom-left border shadow */
+    1px 1px 0 black;   /* Bottom-right border shadow */;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+h3 {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 
+  -1px -1px 0 white, /* Top-left border shadow */
+  1px -1px 0 white,  /* Top-right border shadow */
+  -1px 1px 0 white,  /* Bottom-left border shadow */
+  1px 1px 0 white;   /* Bottom-right border shadow */;
+}
+
+h5 {
+  color: whitesmoke;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow:     
+    -1px -1px 0 black, /* Top-left border shadow */
+    1px -1px 0 black,  /* Top-right border shadow */
+    -1px 1px 0 black,  /* Bottom-left border shadow */
+    1px 1px 0 black;   /* Bottom-right border shadow */;
+}
+
+h6 {
+  color: whitesmoke;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow:     
+    -1px -1px 0 black, /* Top-left border shadow */
+    1px -1px 0 black,  /* Top-right border shadow */
+    -1px 1px 0 black,  /* Bottom-left border shadow */
+    1px 1px 0 black;   /* Bottom-right border shadow */;
+}
+
+.PurposeBox {
+  background-color: #378991; /* Background color of the box */
+  padding: 10px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow effect for the box */
+  text-align: center; /* Center the text horizontally */
+  margin: 0 auto; /* Center the box horizontally */
+  max-width: 600px; /* Sets the maximum width for the box */
+  margin-bottom: 1em;
+}
+
+.PurposeText {
+  color: #fff; /* Text color inside the box */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px; /* Font size for the text */
+  text-shadow:     -1px -1px 0 black, /* Top-left border shadow */
+  1px -1px 0 black,  /* Top-right border shadow */
+  -1px 1px 0 black,  /* Bottom-left border shadow */
+  1px 1px 0 black;   /* Bottom-right border shadow */;;
+}
+
+.DirectionsBox {
+  background-color: #378991; /* Background color of the box */
+  padding: 10px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow effect for the box */
+  text-align: center; /* Center the text horizontally */
+  margin: 0 auto; /* Center the box horizontally */
+  max-width: 600px; /* Sets the maximum width for the box */
+  margin-bottom: 1em;
+}
+
+.DirectionsText {
+  color: #fff; /* Text color inside the box */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px; /* Font size for the text */
+  text-shadow:     -1px -1px 0 black, /* Top-left border shadow */
+  1px -1px 0 black,  /* Top-right border shadow */
+  -1px 1px 0 black,  /* Bottom-left border shadow */
+  1px 1px 0 black;   /* Bottom-right border shadow */;;
+}
+
+.dropdown-button {
+  background-color: #4caf50; /* Background color for the button */
+  color: white; /* Text color for the button */
+  border: none; /* Remove button border */
+  padding: 10px 20px; /* Add padding to the button */
+  cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+.dropdown-content {
+  display: none; /* Initially hide the dropdown content */
+  position: absolute; /* Position the dropdown content */
+  background-color: #f1f1f1; /* Background color for the dropdown content */
+  min-width: 160px; /* Set a minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow */
+  z-index: 1; /* Set a higher z-index to display above other content */
+}
+
+.dropdown-content div {
+  padding: 10px; /* Add padding to each section within the dropdown content */
+}
+
+.dropdown-button:hover + .dropdown-content {
+  display: block; /* Show the dropdown content on button hover */
+}
+
+ul {
+  list-style: none; /* Remove bullet points for unordered lists */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Set a maximum width for the container */
+.container {
+  max-width: 1000px; /* Adjust the value to your preferred maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add spacing around the container */
+  overflow-y: auto;
+}
+
+li {
+  margin-bottom: 10px; /* Add spacing between list items */
+  padding: 10px; /* Add padding to each list item */
+  background-color: #f0f0f0; /* Background color for list items */
+  border: 1px solid #ccc; /* Add a border to each list item */
+  border-radius: 5px; /* Rounded corners for list items */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to list items */
+}
+
+/* Style for selected list items */
+li.selected {
+  background-color: #378991; /* Background color for selected list items */
+  color: #fff; /* Text color for selected list items */
+  border-color: #378991; /* Border color for selected list items */
+}
+
+/* Navigation styles */
+.content {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* background-color: #343a40; /* Background color of the navigation bar */
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.content a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #343a40;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content a:hover {
+  background-color: #4e88a2; /* Hover background color */
 }
+
+.content a.active {
+  background-color: #0fad8e; /* Active tab background color */
+  color: #fff;
+}
+
+
+
+/* Personal medicine list styles */
+.personal-medicine-list {
+  background-color: #378991; /* Background color of the container */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.personal-medicine-list h2 {
+  color: #fff; /* Title color */
+  margin-bottom: 15px;
+}
+
+/* Medicine item styles */
+.personal-medicine-list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa; /* Background color of each medicine item */
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow for each item */
+}
+
+.personal-medicine-list button {
+  background-color: #dc3545; /* Button background color */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.personal-medicine-list button:hover {
+  background-color: #c82333; /* Hover color for the button */
+}
+
+/* styling the layout of the exclusive page */
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Ensure space between the two columns */
+  align-items: flex-start; /* Align items at the start (top) of the container */
+}
+
+.medicine-options,
+.medicine-list {
+  width: 48%; /* Adjust the width as needed */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.personal-medicine-list {
+  width: 48%; /* Adjust the width as needed */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+/* Optional: Add margin or padding as needed */
+.medicine-options,
+.medicine-list,
+.personal-medicine-list {
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
