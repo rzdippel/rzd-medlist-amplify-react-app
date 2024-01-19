@@ -5,12 +5,6 @@ import AWS from 'aws-sdk';
 import React, { useEffect, useState } from 'react';
 import { Auth } from 'aws-amplify'; // Import Auth from aws-amplify
 
-AWS.config.update({
-  accessKeyId: 
-  secretAccessKey:
-  region: 'us-east-1',
-});
-
 const dynamoDB = new AWS.DynamoDB.DocumentClient();
 const generalTableName = 'Medicine-ria6hoxdzjbghoggl27othwmve-dev';
 const personalTableName = 'PersonalMedicineListTable'; // Adjust with your actual DynamoDB table name
