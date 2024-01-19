@@ -18,6 +18,12 @@
       "api": {
         "rzdamplifymedlistapp": {}
       }
+    },
+    "frontend": {
+      "frontendEnvironment": {
+        "buildCommand": "npm run build",
+        "outputDir": "build"
+      }
     }
   }
 }
