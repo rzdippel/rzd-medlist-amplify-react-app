@@ -18,7 +18,7 @@ const About = () => {
     Then, patients may show their local pharmacies their list of
     meds so that their list can also be updated on their end. Say 
     goodbye to receiving medicines you no longer need and not 
-    getting the ones that you do! We hope you find this website useful.
+    getting the ones that you do!
   `;
 
   return (
