@@ -5,6 +5,23 @@ import AWS from 'aws-sdk';
 import React, { useEffect, useState } from 'react';
 import { Auth } from 'aws-amplify'; // Import Auth from aws-amplify
 
+console.log(AWS.config);
+
+const aws_access_key_id = process.env.REACT_APP_AWS_ACCESS_KEY_ID;
+const aws_secret_access_key = process.env.REACT_APP_AWS_SECRET_ACCESS_KEY;
+const aws_region = process.env.REACT_APP_AWS_REGION;
+
+AWS.config.update({
+  accessKeyId: aws_access_key_id,
+  secretAccessKey: aws_secret_access_key,
+  region: aws_region,
+});
+
+//console.log('AWS_ACCESS_KEY_ID:', aws_access_key_id);
+//console.log('AWS_SECRET_ACCESS_KEY:', aws_secret_access_key);
+//console.log('AWS_REGION:', aws_region);
+
+
 const dynamoDB = new AWS.DynamoDB.DocumentClient();
 const generalTableName = 'Medicine-ria6hoxdzjbghoggl27othwmve-dev';
 const personalTableName = 'PersonalMedicineListTable'; // Adjust with your actual DynamoDB table name
