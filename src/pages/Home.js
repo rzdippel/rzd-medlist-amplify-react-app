@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../App.css';
 
 const Home = () => {
     
+
+    useEffect(() => {
+        // Create a new link element for Google Fonts
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+
+        // Append the link element to the document's head
+        document.head.appendChild(link);
+
+        // Clean up function to remove the link when the component unmounts
+        return () => {
+            document.head.removeChild(link);
+        };
+    }, []); // Empty dependency array to ensure this effect runs only once
+
     const text = `
-    Directions: 
-    1. To sign up for an account, hit the "Exclusive Page" button in the top-right corner, it only requires an email!
-    2. Once logged in, you may select your medicines from our database and create your personalized list of medicines.`;
+    Signing up requires only an email and allows you to create your personalized medicine list! Click the "Log In/Sign Up" button in the top right corner of the page to get started`;
 
     return (
         <div> 

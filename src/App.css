@@ -10,7 +10,7 @@
 h1 {
   color: whitesmoke;
   font-size: 60px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-shadow:     
     -1px -1px 0 black, /* Top-left border shadow */
     1px -1px 0 black,  /* Top-right border shadow */
@@ -64,7 +64,7 @@ h6 {
 
 .PurposeText {
   color: #fff; /* Text color inside the box */
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 21px; /* Font size for the text */
   text-shadow:     -1px -1px 0 black, /* Top-left border shadow */
   1px -1px 0 black,  /* Top-right border shadow */
@@ -85,7 +85,7 @@ h6 {
 
 .DirectionsText {
   color: #fff; /* Text color inside the box */
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 21px; /* Font size for the text */
   text-shadow:     -1px -1px 0 black, /* Top-left border shadow */
   1px -1px 0 black,  /* Top-right border shadow */
@@ -186,6 +186,7 @@ li.selected {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
   padding: 20px;
   margin-top: 20px;
+  min-width: 300px;
 }
 
 .personal-medicine-list h2 {

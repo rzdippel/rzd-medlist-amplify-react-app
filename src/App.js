@@ -12,7 +12,7 @@ function App() {
         <div className="content">
           <NavLink className="content" exact activeClassName="active" to="/">Home</NavLink>
           <NavLink className="content" activeClassName="active" to="/about">About</NavLink>
-          <NavLink className="content" activeClassName="active" to="/exclusive">Exclusive Page</NavLink>
+          <NavLink className="content" activeClassName="active" to="/exclusive">Log In/Sign up</NavLink>
         </div>
         <Routes>
           <Route path="/" element={<Home />}></Route>

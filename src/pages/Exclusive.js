@@ -173,7 +173,7 @@ function YourComponent() {
       )}
   
       <div className="personal-medicine-list">
-        <h2>Your Personalized Med List:</h2>
+        <h2>Your Med List:</h2>
         {renderSelectedMedicines()}
       </div>
     </div>

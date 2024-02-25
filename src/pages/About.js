@@ -1,7 +1,22 @@
-import React from 'react'; // Import React
+import React, { useEffect }from 'react'; // Import React
 import '../App.css'; // Import external CSS file
 
 const About = () => {
+  
+  useEffect(() => {
+    // Create a new link element for Google Fonts
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+
+    // Append the link element to the document's head
+    document.head.appendChild(link);
+
+    // Clean up function to remove the link when the component unmounts
+    return () => {
+        document.head.removeChild(link);
+    };
+}, []); // Empty dependency array to ensure this effect runs only once
   
   const text = `
     Bridging the gap between doctor and pharmacy visits!
