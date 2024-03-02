@@ -1,11 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, NavLink, useNavigate } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import ExclusivePage from './pages/Exclusive';
 
 function App() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleBeforeUnload = (event) => {
+      event.preventDefault(); // Prevent browser prompt
+      navigate('/'); // Redirect to the home page
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, [navigate]);
+
   return (
     <div className="App">
       <Router>
@@ -18,6 +32,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/exclusive" element={<ExclusivePage />}></Route>
+          {/* No need for a catch-all route */}
         </Routes>
       </Router>
     </div>
@@ -25,3 +40,5 @@ function App() {
 }
 
 export default App;
+
+
