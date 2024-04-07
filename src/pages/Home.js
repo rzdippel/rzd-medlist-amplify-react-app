@@ -20,6 +20,8 @@ const Home = () => {
     }, []); // Empty dependency array to ensure this effect runs only once
 
     const text = `
+    The website designed to simplify keeping track of your medicines! 
+    
     Signing up requires only an email and allows you to create your personalized medicine list! Click the "Log In/Sign Up" button in the top right corner of the page to get started`;
 
     return (

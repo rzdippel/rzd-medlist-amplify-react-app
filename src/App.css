@@ -52,7 +52,7 @@ h6 {
 }
 
 .PurposeBox {
-  background-color: #378991; /* Background color of the box */
+  background-image: radial-gradient(circle, #378891, #0fad8e); /* Background color of the box */
   padding: 10px; /* Padding around the text */
   border-radius: 10px; /* Rounded corners for the box */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow effect for the box */
@@ -73,7 +73,7 @@ h6 {
 }
 
 .DirectionsBox {
-  background-color: #378991; /* Background color of the box */
+  background-image: radial-gradient(circle, #378991, #0fad8e); /* Background color of the box */
   padding: 10px; /* Padding around the text */
   border-radius: 10px; /* Rounded corners for the box */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow effect for the box */
@@ -169,7 +169,6 @@ li.selected {
   border-radius: 5px;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   background-color: #343a40;
-  min-width: 100px;
 }
 
 /* tab colors when hovering */
@@ -186,7 +185,7 @@ li.selected {
 
 /* Personal medicine list styles */
 .personal-medicine-list {
-  background-color: #378991; /* Background color of the container */
+  background-image: radial-gradient(circle, #378991, #0fad8e); /* Background color of the container */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
   padding: 20px;
