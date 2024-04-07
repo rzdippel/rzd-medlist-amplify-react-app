@@ -190,7 +190,7 @@ li.selected {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
   padding: 20px;
   margin-top: 20px;
-  min-width: 300px;
+  min-width: 380px;
 }
 
 .personal-medicine-list h2 {
