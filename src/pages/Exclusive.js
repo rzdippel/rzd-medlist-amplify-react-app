@@ -166,7 +166,7 @@ function YourComponent() {
               </li>
             ))}
           </ul>
-          <button onClick={handleAddToPersonalList}>
+          <button class="add-to-list-button" onClick={handleAddToPersonalList}>
             Add Selected Medicines to Your Personal List
           </button>
         </div>
@@ -180,12 +180,28 @@ function YourComponent() {
   );
 }
 const ExclusivePage = () => {
+
+  useEffect(() => {
+    // Create a new link element for Google Fonts
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+
+    // Append the link element to the document's head
+    document.head.appendChild(link);
+
+    // Clean up function to remove the link when the component unmounts
+    return () => {
+        document.head.removeChild(link);
+    };
+}, []); // Empty dependency array to ensure this effect runs only once
+
   return (
     <Authenticator>
       {({ signOut }) => (
         <div className="exclusive-page">
           <h3>You are authenticated, you may now create your medicine list!</h3>
-          <button onClick={signOut}>Sign Out</button>
+          <button class="sign-out-button" onClick={signOut}>Sign Out</button>
           <div className="content">
             <YourComponent />
           </div>
